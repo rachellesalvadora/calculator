@@ -1,7 +1,7 @@
 VERSION 5.00
 Begin VB.Form Form1 
    BorderStyle     =   1  'Fixed Single
-   Caption         =   "Developed by: Pablito I. Jolbitado"
+   Caption         =   ""
    ClientHeight    =   2265
    ClientLeft      =   45
    ClientTop       =   375
@@ -120,15 +120,6 @@ KeyAscii = 0
 End Select
 End Sub
 
-Private Sub Command1_Click()
-'* Developed by: Pablito I. Jolbitado
-'  Date Created: December 8, 2014 Time: 7:30
-'  Date Publish: December 8, 2014 Time: 7:45
-'  Copyright ® Allright Reserved 2014
-
-
-' HAHAHA :) sana magustuhan mo :P sample lang ito
-On Error GoTo pablito:
 
 If Combo1.Text = "Add" Then
 MsgBox "The sum of two numbers ( " & Text1.Text & " + " & Text2.Text & " ) " & " is:  " & Val(Text1.Text) + Val(Text2.Text), 64, ""
@@ -141,7 +132,6 @@ MsgBox "The quetient of two numbers ( " & Text1.Text & " / " & Text2.Text & " ) 
 End If
 Exit Sub
 
-pablito:
 MsgBox "Cannot divide by zero", vbCritical, ""
 
 End Sub
